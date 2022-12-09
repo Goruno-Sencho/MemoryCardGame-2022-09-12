@@ -1,0 +1,15 @@
+/*using tangerine font*/
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+*{
+  margin: 1;
+  padding: 1;
+  box-sizing: border-box;
+  font-family: 'tangerine', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background: #EF8EF5;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
