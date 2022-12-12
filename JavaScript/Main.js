@@ -10,8 +10,8 @@ function flipCard({target: clickedCard}) {
         }
         cardTwo = clickedCard;
         disableDeck = true;
-        let cardOneImg = cardOne.querySelector(".back-view img").src,
-        cardTwoImg = cardTwo.querySelector(".back-view img").src;
+        let cardOneImg = cardOne.querySelector(".Back-sideview img").src,
+        cardTwoImg = cardTwo.querySelector(".Back-sideview img").src;
         matchCards(cardOneImg, cardTwoImg);
     }
 }
@@ -47,7 +47,7 @@ function shuffleCard() {
     arr.sort(() => Math.random() > 0.5 ? 1 : -1);
     cards.forEach((card, i) => {
         card.classList.remove("flip");
-        let imgTag = card.querySelector(".back-view img");
+        let imgTag = card.querySelector(".Back-sideview img");
         imgTag.src = `images/img-${arr[i]}.png`;
         card.addEventListener("click", flipCard);
     });
